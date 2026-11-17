@@ -1,0 +1,15 @@
+{
+  "name": "Pond Liner Size Calculator \u2014 45 Mil EPDM & Underlayment Dimensions",
+  "short_name": "Pond Liner Calc",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#061019",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

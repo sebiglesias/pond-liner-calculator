@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pond Liner Size Calculator — 45 Mil EPDM & Underlayment Dimensions — Accurate Material Estimator</title>
+  <meta name="description" content="Calculate exact flat sheet dimensions for 45 mil EPDM pond liners with 2x depth contouring, perimeter anchor overlap, and water volume.">
+  <link rel="canonical" href="https://sebiglesias.com.ar/pond-liner-calculator/">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pond Liner Size Calculator — 45 Mil EPDM & Underlayment Dimensions">
+  <meta property="og:description" content="Calculate exact flat sheet dimensions for 45 mil EPDM pond liners with 2x depth contouring, perimeter anchor overlap, and water volume.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/pond-liner-calculator/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Pond Liner Size Calculator \u2014 45 Mil EPDM & Underlayment Dimensions",
+    "url": "https://sebiglesias.com.ar/pond-liner-calculator/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Calculate exact flat sheet dimensions for 45 mil EPDM pond liners with 2x depth contouring, perimeter anchor overlap, and water volume.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the standard formula for calculating pond liner size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The industry standard formula is:  \n**Liner Length = Pond Length + (2 \u00d7 Maximum Depth) + (2 \u00d7 Overlap Collar)**  \n**Liner Width = Pond Width + (2 \u00d7 Maximum Depth) + (2 \u00d7 Overlap Collar)**  \nAlways include at least 1.5 feet of overlap on every side to anchor the liner beneath heavy perimeter perimeter boulders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is 45 Mil EPDM rubber preferred over PVC or HDPE for fish ponds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "45 mil EPDM rubber contains zero toxic plasticizers that leach into water and harm Koi fish or plants. It is highly elastic (stretches over 300% to conform to shelf contours) and has a 25+ year lifespan resistant to sunlight and freeze-thaw cycles. PVC becomes brittle and cracks in sub-freezing winters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How deep must a backyard Koi pond be in cold winter climates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In northern climates that experience hard ground freezes, a Koi pond must be at least 3.0 to 4.0 feet deep. The top 6 to 12 inches may freeze into solid ice, but the water beneath will remain an insulated 39\u00b0F (4\u00b0C), where fish can safely hibernate."
+        }
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">🐟 Aquatics & Water Garden Engineering</div>
+      <h1>Garden Pond Liner & Underlayment Calculator</h1>
+      <p class="subtitle">Calculate exact dimensions for 45 mil EPDM rubber pond liners, geotextile underlayment, and water capacity in gallons.</p>
+    </header>
+
+    <!-- AdSense Top Banner -->
+    <div style="text-align:center; margin: 16px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <main class="calc-grid">
+      <!-- Inputs Card -->
+      <form class="card" id="pond-liner-calculator-form" onsubmit="event.preventDefault();">
+        <h2>📐 Pond Dimensions & Depth Contours</h2>
+        
+        <div class="input-row">
+          <div class="form-group">
+            <label for="pondLen">Maximum Pond Length</label>
+            <div class="input-wrap">
+              <input type="number" id="pondLen" step="1" min="4" value="15" required>
+              <span class="input-suffix">ft</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pondWid">Maximum Pond Width</label>
+            <div class="input-wrap">
+              <input type="number" id="pondWid" step="1" min="4" value="10" required>
+              <span class="input-suffix">ft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-group">
+            <label for="maxDepth">Deepest Point of Pond</label>
+            <div class="input-wrap">
+              <input type="number" id="maxDepth" step="0.5" min="1.5" max="8" value="3.0" required>
+              <span class="input-suffix">ft</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edgeOverlap">Anchor Edge Overlap</label>
+            <select id="edgeOverlap">
+              <option value="1.0">1.0 Foot (Minimum Flat Edge)</option>
+              <option value="1.5" selected>1.5 Feet (Standard Rock Anchor Trench)</option>
+              <option value="2.0">2.0 Feet (Heavy Boulders / Waterfall)</option>
+            </select>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Results Card -->
+      <div class="card">
+        <h2>🎯 Liner Sheet Size to Purchase</h2>
+        
+        <div class="result-hero">
+          <div class="result-label">Order This Minimum Liner Sheet Size</div>
+          <div class="result-number" id="linerDimensions">24ft × 19ft</div>
+          <div class="result-label" style="color:#ffffff;">Standard Size: 25ft × 20ft Roll</div>
+          <div style="font-size:0.95rem; color:#bae6fd; margin-top:6px;" id="linerSqFt">Total Sheet Area: 500 sq ft (45 Mil EPDM)</div>
+        </div>
+
+        <div class="sub-hero-grid">
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Estimated Pond Volume</div>
+            <div class="sub-hero-val" id="pondGallons">2,700 Gallons</div>
+            <div class="sub-hero-sub">Ovoid contour factor (0.8x)</div>
+          </div>
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Pump Turnover Flow</div>
+            <div class="sub-hero-val" id="pumpGph">2,700 GPH</div>
+            <div class="sub-hero-sub">Cycle volume every hour</div>
+          </div>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-desc">Geotextile Underlayment</div>
+            <div class="spec-val">500 sq ft (Cushion Mat)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Liner Thickness</div>
+            <div class="spec-val">45 Mil Fish-Safe EPDM</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Total Liner Weight</div>
+            <div class="spec-val">≈ 145 lbs (EPDM Rubber)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Koi Overwintering Depth</div>
+            <div class="spec-val" style="color:#4ade80;">Safe (≥3ft Below Ice)</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Amazon Supplies Box -->
+    <section class="supplies-card">
+      <h3>🛠️ Recommended Tools, Hardware & Building Supplies</h3>
+      <div class="supplies-grid">
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Firestone PondGard 45 Mil EPDM Rubber Pond Liner (20ft x 25ft)</div>
+            <div class="supply-desc">Fish-safe, UV resistant synthetic rubber membrane remains flexible down to -40°F without cracking.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=firestone+pondgard+45+mil+epdm+liner&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Aquascape Underlayment Geotextile Fabric (15ft x 20ft)</div>
+            <div class="supply-desc">Non-woven protective underlayment shields rubber pond liner from sharp stones, roots, and burrowing pests.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=aquascape+pond+underlayment+fabric&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Aquascape AquaForce 2700 GPH Submersible Solids-Handling Pond Pump</div>
+            <div class="supply-desc">Energy-efficient asynchronous water pump handles floating debris and feeds biological waterfall filters.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=aquascape+aquaforce+pond+pump&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Aquascape Black Waterfall Foam Sealant Spray (Pack of 3)</div>
+            <div class="supply-desc">Expanding black polyurethane foam directs waterfall flow over rocks without disappearing into cracks.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=aquascape+black+waterfall+foam&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:#94a3b8; margin-top:14px; margin-bottom:0; text-align:center;">
+        ⚖️ <em>Affiliate Notice: As an Amazon Associate, this site earns from qualifying purchases at no additional cost to you. We strictly link to trade-grade construction tools, hardware, and safety materials.</em>
+      </p>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="faq-section">
+      <h2 style="font-size:1.35rem; color:#ffffff; margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-q">What is the standard formula for calculating pond liner size?</div>
+        <div class="faq-a">The industry standard formula is:  
+**Liner Length = Pond Length + (2 × Maximum Depth) + (2 × Overlap Collar)**  
+**Liner Width = Pond Width + (2 × Maximum Depth) + (2 × Overlap Collar)**  
+Always include at least 1.5 feet of overlap on every side to anchor the liner beneath heavy perimeter perimeter boulders.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why is 45 Mil EPDM rubber preferred over PVC or HDPE for fish ponds?</div>
+        <div class="faq-a">45 mil EPDM rubber contains zero toxic plasticizers that leach into water and harm Koi fish or plants. It is highly elastic (stretches over 300% to conform to shelf contours) and has a 25+ year lifespan resistant to sunlight and freeze-thaw cycles. PVC becomes brittle and cracks in sub-freezing winters.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How deep must a backyard Koi pond be in cold winter climates?</div>
+        <div class="faq-a">In northern climates that experience hard ground freezes, a Koi pond must be at least 3.0 to 4.0 feet deep. The top 6 to 12 inches may freeze into solid ice, but the water beneath will remain an insulated 39°F (4°C), where fish can safely hibernate.</div>
+      </div>
+    </section>
+
+    <!-- Bottom AdSense Banner -->
+    <div style="text-align:center; margin: 32px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+      <p>© 2026 <a href="https://sebiglesias.com.ar/">sebiglesias.com.ar</a> · Pond Liner Size Calculator — 45 Mil EPDM & Underlayment Dimensions. Educational and trade reference tool.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
